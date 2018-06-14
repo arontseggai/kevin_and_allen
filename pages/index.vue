@@ -79,7 +79,7 @@
       </section> -->
 
       <section id="projects">
-        <div id="vue-projects"></div>
+        <ProjectsComponent></ProjectsComponent>
       </section>
 
       <hr>
@@ -135,11 +135,11 @@
 </template>
 
 <script>
-  import AppLogo from '~/components/AppLogo.vue'
+  import ProjectsComponent from '~/components/ProjectsComponent.vue'
 
   export default {
     components: {
-      AppLogo
+      ProjectsComponent
     }
   }
 </script>

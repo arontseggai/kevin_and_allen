@@ -4,7 +4,7 @@
       <nav>
         <div class="imagery">
           <div class="image large-logo" id="logo">
-            <img src="assets/img/allen_en_kevin_logo.jpg" alt="">
+            <img src="~/assets/img/allen_en_kevin_logo.jpg">
           </div>
         </div>
       </nav>
@@ -40,7 +40,7 @@
                 <div class="column is-5">
                   <div class="photo-card">
                     <div class="imagery">
-                      <img src="assets/img/kim.jpeg" alt="">
+                      <img src="~/assets/img/kim.jpeg">
                     </div>
                     <div class="content-block">
                       <p>ALLEN GRYGIERCZYK</p>
@@ -52,7 +52,7 @@
                 <div class="column is-5">
                   <div class="photo-card">
                     <div class="imagery">
-                      <img src="assets/img/kim.jpeg" alt="">
+                      <img src="~/assets/img/kim.jpeg">
                     </div>
                     <div class="content-block">
                       <p>KEVIN BOITELLE</p>
@@ -126,7 +126,7 @@
       <div class="outer-container">
         <div class="imagery">
           <div class="image small-logo" id="logo">
-            <img src="assets/img/allen_en_kevin_logo.jpg" alt="">
+            <img src="~/assets/img/allen_en_kevin_logo.jpg">
           </div>
         </div>
       </div>

@@ -28,6 +28,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['~/assets/js/main.js'],
     /*
     ** Run ESLint on save
     */

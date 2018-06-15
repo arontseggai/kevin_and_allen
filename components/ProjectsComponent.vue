@@ -23,7 +23,7 @@
     methods: {
       callGoogleDriveSheet(){
         let that = this
-        const url = "https://sheets.googleapis.com/v4/spreadsheets/1NhrQzz5N_oXIUta7DxlcTXU_Hoo7Zbvno6UpQOX2dTE/values/a2:c?key=AIzaSyCxBN5zBVOjgLJB6CK9ZznB19KDEzXcBXU"
+        const url = "https://sheets.googleapis.com/v4/spreadsheets/1NhrQzz5N_oXIUta7DxlcTXU_Hoo7Zbvno6UpQOX2dTE/values/a2:e?key=AIzaSyCxBN5zBVOjgLJB6CK9ZznB19KDEzXcBXU"
         fetch(url)
         .then(function(response){
           return response.json();
@@ -37,8 +37,12 @@
             let project = {
               id: `project-${i}`,
               title: value[0],
-              url: value[1]
+              url: value[1],
+              show: value[2],
+              photo: `https://drive.google.com/uc?export=view&id=${value[3]}`,
+              photoHover: `https://drive.google.com/uc?export=view&id=${value[4]}`
             }
+            console.log(project)
             array.push(project)
           });
           that.projects = array

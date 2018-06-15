@@ -1,7 +1,7 @@
 <template>
   <div class="column is-6">
     <h1>{{project.url}}</h1>
-    <img :src="project.image" alt="">
+    <img :src="project.photo" alt="">
   </div>
 </template>
 

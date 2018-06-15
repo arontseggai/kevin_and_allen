@@ -1,6 +1,6 @@
 <template>
-  <div class="columns is-mobile padding-sides-40">
-    <div class="column is-4">
+  <div class="columns is-mobile padding-sides">
+    <div class="column is-6">
       <div class="outer-container">
         <div class="inner-container">
           <p>GRYGIERCZYK & BOITELLE</p>
@@ -21,13 +21,13 @@
         </div>
       </div>
     </div>
-    <div class="column is-half-mobile is-6 is-offset-2">
+    <div class="column is-6">
       <div class="imagery-container">
         <div class="columns is-multiline">
 
-          <div class="column is-2"></div>
+          <div class="column is-2 is-hidden-mobile"></div>
 
-          <div class="column is-half-mobile is-offset-6-mobile is-5">
+          <div class="column is-12-mobile is-5">
             <div class="photo-card">
               <div class="imagery">
                 <img clas="neutral" src="~/assets/img/ALLEN_neutral.jpg">
@@ -40,7 +40,7 @@
             </div>
           </div>
 
-          <div class="column is-half-mobile is-offset-6-mobile is-5">
+          <div class="column is-12-mobile is-5">
             <div class="photo-card">
               <div class="imagery">
                 <img class="neutral" src="~/assets/img/KEVIN_neutral.jpg">

@@ -2,18 +2,31 @@
 
 @media only screen and (max-width: 1215px) {
   iframe { width: 800px; }
+  #player { width: 800px; }
 }
 
 @media only screen and (max-width: 1023px) {
   iframe { width: 600px; }
+  #player { width: 600px; }
+    .padding-sides {
+    padding: 0px 30px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  iframe { width: 400px; }
-  .padding-sides-40 {
-    padding: 0px 40px;
+  iframe { width: 300px; }
+  #player { width: 300px; }
+  .padding-sides {
+    padding: 0px 10px;
   }
 }
+
+@media only screen and (min-width: 1216px) {
+  #about .inner-container {
+    padding-right: 280px;
+  }
+}
+
 
 
 p {

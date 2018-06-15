@@ -5,7 +5,7 @@
       <img class="hover" :src="project.photoHover" alt="">
     </div>
     <div class="overlay" :class="{active: isActive}" @click="deactiveOverlay" >
-      <div class="video" :data-vimeo-url="project.url" data-vimeo-width="550" :id="project.id"></div>
+      <div class="video" :data-vimeo-url="project.url" data-vimeo-width="800" :id="project.id"></div>
     </div>
   </div>
 </template>
@@ -36,7 +36,7 @@
   background-color: rgba(0,0,0, 0.9);
   display: flex;
   justify-content: center;
-  padding-top: 20%;
+  padding-top: 13%;
 }
 
 .overlay .video {

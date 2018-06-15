@@ -17,7 +17,6 @@
     },
     data() {
       return {
-        videos: false,
         projects: []
       }
     },
@@ -60,10 +59,6 @@
     },
     mounted(){
       this.callGoogleDriveSheet()
-    },
-    updated(){
-    // should only run this once
-
     }
   }
 </script>

@@ -5,12 +5,20 @@
       <img class="hover" :src="project.photoHover" alt="">
     </div>
     <div class="overlay" :class="{active: isActive}" @click="deactiveOverlay" >
-      <div class="video" :data-vimeo-url="project.url" data-vimeo-width="800" :id="project.id"></div>
+      <div class="video" :data-vimeo-url="project.url" :data-vimeo-width="1000" :id="project.id"></div>
     </div>
   </div>
 </template>
 
 <style scoped>
+
+
+/*@media only screen and (max-width: 1000px) {
+  iframe {
+    width: 400px;
+  }
+}*/
+
 
 .imagery { position: relative; }
 .imagery .hover {
@@ -57,7 +65,8 @@
     data() {
       return {
         isActive: false,
-        player: false
+        player: false,
+        windowWidth: false
       }
     },
     methods: {
@@ -69,8 +78,16 @@
         this.player.pause()
       }
     },
+    computed: {
+      responsiveVideoWidth() {
+
+          return 1000
+      }
+    },
     mounted() {
+      this.windowWidth = window.innerWidth
       this.player = new Player(this.project.id)
+      console.log(this.windowWidth)
     }
   }
 </script>

@@ -1,4 +1,21 @@
 
+
+@media only screen and (max-width: 1215px) {
+  iframe { width: 800px; }
+}
+
+@media only screen and (max-width: 1023px) {
+  iframe { width: 600px; }
+}
+
+@media only screen and (max-width: 768px) {
+  iframe { width: 400px; }
+  .padding-sides-40 {
+    padding: 0px 40px;
+  }
+}
+
+
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -24,11 +41,6 @@ hr {
   font-weight: 400;
   font-size: 12px;
   line-height: 13px;
-}
-
-
-.padding-sides-40 {
-  padding: 0px 40px;
 }
 
 .container {

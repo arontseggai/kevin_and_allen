@@ -1,6 +1,6 @@
 <template>
-  <div class="columns is-mobile">
-    <div class="column is-mobile-12 is-4">
+  <div class="columns is-mobile padding-sides-40">
+    <div class="column is-4">
       <div class="outer-container">
         <div class="inner-container">
           <p>GRYGIERCZYK & BOITELLE</p>
@@ -16,18 +16,18 @@
             <br>
             <p>Contact  <a href="mailto:info@grygboit.com">us</a> and let's make amazing work.</p>
             <br>
-            <p>(En mochten onze hoofden je bekend voorkomen: nee, ‘Opslaan Als’ bestaat echt niet meer. Ja, we zijn nog steeds hartstikke freelance. Maar omdat we zo feilloos op elkaar ingespeeld zijn, nog steeds veel samen werken en iedereen toch al denkt dat we broers zijn, hebben we besloten het beestje dat ‘wij-twee-als-productie-regie-duo’ heet, een naam te geven.)</p>
+            <p>(In case our faces look familiar: no, ‘Opslaan Als’ really is dead. Yes, we’re still very much freelance. But since we make such a smooth sailing team, still work together a lot and everybody thinks we’re brothers anyway, we decided to give the monster that is us-as-a-duo a name.)</p>
           </div>
         </div>
       </div>
     </div>
     <div class="column is-half-mobile is-6 is-offset-2">
       <div class="imagery-container">
-        <div class="columns is-mobile">
+        <div class="columns is-multiline">
 
           <div class="column is-2"></div>
 
-          <div class="column is-half-mobile is-5">
+          <div class="column is-half-mobile is-offset-6-mobile is-5">
             <div class="photo-card">
               <div class="imagery">
                 <img clas="neutral" src="~/assets/img/ALLEN_neutral.jpg">
@@ -40,7 +40,7 @@
             </div>
           </div>
 
-          <div class="column is-half-mobile is-5">
+          <div class="column is-half-mobile is-offset-6-mobile is-5">
             <div class="photo-card">
               <div class="imagery">
                 <img class="neutral" src="~/assets/img/KEVIN_neutral.jpg">

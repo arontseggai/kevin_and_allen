@@ -63,14 +63,7 @@
     },
     updated(){
     // should only run this once
-    // console.log('updated');
-    // if (!this.videos){
-    //   console.log('initing videos');
-    //   this.projects.forEach(function(project){
-    //     new Player(project.id);
-    //   });
-    //   this.videos = true;
-    // }
+
+    }
   }
-}
 </script>

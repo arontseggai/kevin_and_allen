@@ -5,7 +5,7 @@
       <img class="hover" :src="project.photoHover" alt="">
     </div>
     <div class="overlay" :class="{active: isActive}" @click="deactiveOverlay" >
-      <div :data-vimeo-url="project.url" data-vimeo-width="550" :id="project.id"></div>
+      <div class="video" :data-vimeo-url="project.url" data-vimeo-width="550" :id="project.id"></div>
     </div>
   </div>
 </template>
@@ -34,17 +34,30 @@
   top: 0;
   left: 0;
   background-color: rgba(0,0,0, 0.9);
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+}
+
+.overlay .video {
+  display: none;
+}
+
+.overlay.active .video {
+  display: block;
 }
 
 </style>
 
 <script>
+  import Player from '@vimeo/player'
 
   export default {
     props: ['project'],
     data() {
       return {
-        isActive: false
+        isActive: false,
+        player: false
       }
     },
     methods: {
@@ -53,7 +66,11 @@
       },
       deactiveOverlay() {
         this.isActive = false
+        this.player.pause()
       }
+    },
+    mounted() {
+      this.player = new Player(this.project.id)
     }
   }
 </script>

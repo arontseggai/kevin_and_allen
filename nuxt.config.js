@@ -24,7 +24,7 @@ module.exports = {
   'bulma/css/bulma.css',
   "~/assets/css/styles.css"
   ],
-  router: { base: 'http://grygboit.com/' },
+  router: { base: './' },
   /*
   ** Build configuration
   */

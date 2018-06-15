@@ -17,10 +17,15 @@
     },
     data() {
       return {
+        videos: false,
         projects: []
       }
     },
     methods: {
+      getGoogleDriveImageId(url){
+        let id = url.substr(url.length - 33)
+        return `https://drive.google.com/uc?export=view&id=${id}`
+      },
       callGoogleDriveSheet(){
         let that = this
         const url = "https://sheets.googleapis.com/v4/spreadsheets/1NhrQzz5N_oXIUta7DxlcTXU_Hoo7Zbvno6UpQOX2dTE/values/a2:e?key=AIzaSyCxBN5zBVOjgLJB6CK9ZznB19KDEzXcBXU"
@@ -29,24 +34,25 @@
           return response.json();
         })
         .then(function(response) {
-          console.log(response.values);
           let projects_array = response.values;
           let array = []
 
           projects_array.forEach( function ( value, i ) {
+            let photourl = that.getGoogleDriveImageId(value[3])
+            let hoverurl = that.getGoogleDriveImageId(value[4])
+
             let project = {
               id: `project-${i}`,
               title: value[0],
               url: value[1],
               show: value[2],
-              photo: `https://drive.google.com/uc?export=view&id=${value[3]}`,
-              photoHover: `https://drive.google.com/uc?export=view&id=${value[4]}`
+              photo: photourl,
+              photoHover: hoverurl
             }
-            console.log(project)
             array.push(project)
           });
           that.projects = array
-      })
+        })
         .catch(function(error) {
           console.log(error);
         });
@@ -56,7 +62,7 @@
       this.callGoogleDriveSheet()
     },
     updated(){
-    //should only run this once
+    // should only run this once
     // console.log('updated');
     // if (!this.videos){
     //   console.log('initing videos');
@@ -64,6 +70,7 @@
     //     new Player(project.id);
     //   });
     //   this.videos = true;
+    // }
   }
 }
 </script>

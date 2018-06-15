@@ -3,8 +3,8 @@
         <div class="column is-6 text-right">
         <p>INFO</p>
         <div class="subcontent">
-            <p><a href="mailto:info@grygboit.com">Mail</a></p>
             <p>Tel: 0031643248030</p>
+            <p><a href="mailto:info@grygboit.com">Mail</a></p>
             <p><a href="https://instagram.com/grygierczykboitelle" target="_blank">Instagram</a></p>
             <p><a href="https://vimeo.com/grygboit" target="_blank">Vimeo</a></p>
         </div>
@@ -15,7 +15,7 @@
             <p v-for="(client, index) in clients" :key="index">{{ client }}</p>
         </div>
         </div>
-    </div>    
+    </div>
 </template>
 
 <script>
@@ -38,7 +38,7 @@
                     'Xite',
                     'Blueprint Media',
                     'Doritos',
-                    'Iens', 
+                    'Iens',
                     'Tele2',
                     'Toto',
                     'SNS',
@@ -54,6 +54,6 @@
                     'Studio Brussel'
                     ]
             }
-        }        
+        }
     }
 </script>

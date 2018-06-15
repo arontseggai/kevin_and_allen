@@ -1,5 +1,5 @@
 <template>
-  <div class="columns multi-line">
+  <div class="columns is-multiline">
     <ProjectComponent v-for="(project, index) in projects" :key="index" :project="project"></ProjectComponent>
   </div>
 </template>
@@ -17,10 +17,7 @@
     },
     data() {
       return {
-        projects: [
-          {url: 'https://vimeo.com/274699898', image: '~/assets/img/still.png', overlayImage: ''},
-          {url: 'https://vimeo.com/274697124'}
-        ]
+        projects: []
       }
     },
     methods: {
@@ -32,28 +29,28 @@
           return response.json();
         })
         .then(function(response) {
+          console.log(response.values);
           let projects_array = response.values;
           let array = []
-          for (let i = projects_array.length - 1; i >= 0; i--) {
-            let project = {
-              title: projects_array[i][0],
-              url: projects_array[i][1],
-              id: "project-" + i
 
-            };
-          console.log(project)
-          this.projects.push(project)
-        };
-        console.log(this.projects)
+          projects_array.forEach( function ( value, i ) {
+            let project = {
+              id: `project-${i}`,
+              title: value[0],
+              url: value[1]
+            }
+            array.push(project)
+          });
+          that.projects = array
       })
-      .catch(function(error) {
-        console.log(error);
-      });
-    }
-  },
-  mounted(){
-    // this.callGoogleDriveSheet()
-  },
+        .catch(function(error) {
+          console.log(error);
+        });
+      }
+    },
+    mounted(){
+      this.callGoogleDriveSheet()
+    },
     updated(){
     //should only run this once
     // console.log('updated');
@@ -63,6 +60,6 @@
     //     new Player(project.id);
     //   });
     //   this.videos = true;
-    }
   }
+}
 </script>

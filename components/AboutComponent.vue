@@ -15,6 +15,8 @@
             <p>You know the story by now, we understand all of it.</p>
             <br>
             <p>Contact  <a href="mailto:info@grygboit.com">us</a> and let's make amazing work.</p>
+            <br>
+            <p>(En mochten onze hoofden je bekend voorkomen: nee, ‘Opslaan Als’ bestaat echt niet meer. Ja, we zijn nog steeds hartstikke freelance. Maar omdat we zo feilloos op elkaar ingespeeld zijn, nog steeds veel samen werken en iedereen toch al denkt dat we broers zijn, hebben we besloten het beestje dat ‘wij-twee-als-productie-regie-duo’ heet, een naam te geven.)</p>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ module.exports = {
   'bulma/css/bulma.css',
   "~/assets/css/styles.css"
   ],
-  // router: { base: '/k_en_a/' },
+  router: { base: '/' },
   /*
   ** Build configuration
   */

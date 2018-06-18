@@ -19,7 +19,7 @@
   position: absolute;
   right: 0;
   top:0;
-  height: 70px;
+  height: 25px;
   margin: 7% 10% 0px 0px;
   cursor: pointer;
   z-index: 999;

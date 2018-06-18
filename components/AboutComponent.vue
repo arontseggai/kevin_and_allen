@@ -24,7 +24,7 @@
     <div class="column is-6">
       <div class="imagery-container">
         <div class="columns is-multiline">
-
+          
           <div class="column is-2 is-hidden-mobile"></div>
 
           <div class="column is-12-mobile is-5">
@@ -35,6 +35,7 @@
               </div>
               <div class="content-block">
                 <p>ALLEN GRYGIERCZYK</p>
+                <p>PRODUCER</p>
                 <p><a href="https://instagram.com/allengrygierczyk" target="_blank">Instagram</a></p>
               </div>
             </div>
@@ -48,6 +49,7 @@
               </div>
               <div class="content-block">
                 <p>KEVIN BOITELLE</p>
+                <p>DIRECTOR</p>
                 <p><a href="http://kevinboitelle.nl" target="_blank">Website</a> / <a href="https://instagram.com/kevinboitelle" target="_blank">Instagram</a></p>
               </div>
             </div>

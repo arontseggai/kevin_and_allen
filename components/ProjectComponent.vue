@@ -1,10 +1,11 @@
 <template>
-  <div class="column is-6">
+  <div v-cloak class="column is-6">
     <div class="imagery" @click="activateOverlay" >
       <img :src="project.photo" alt="">
       <img class="hover" :src="project.photoHover" alt="">
     </div>
-    <div class="overlay" :class="{active: isActive}" @click="deactiveOverlay" >
+    <div class="overlay" :class="{active: isActive}">
+      <img class="close" src="~/static/close.svg" alt="" @click="deactiveOverlay">
       <div class="video" :data-vimeo-url="project.url" :data-vimeo-width="1000" :id="project.id"></div>
     </div>
   </div>
@@ -12,13 +13,22 @@
 
 <style scoped>
 
+[v-cloak] { display: none; }
 
-/*@media only screen and (max-width: 1000px) {
-  iframe {
-    width: 400px;
-  }
-}*/
+.overlay .close {
+  position: absolute;
+  right: 0;
+  top:0;
+  height: 70px;
+  margin: 7% 10% 0px 0px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
 
+.overlay.active .close {
+ display: block;
+}
 
 .imagery { position: relative; }
 .imagery .hover {
@@ -37,7 +47,7 @@
 .overlay.active {
   position: fixed;
   min-height: 100%;
-  z-index: 999;
+  z-index: 998;
   width: 100%;
   top: 0;
   left: 0;

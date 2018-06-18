@@ -4,10 +4,6 @@
   </div>
 </template>
 
-<style>
-
-</style>
-
 <script>
   import ProjectComponent from './ProjectComponent.vue'
 

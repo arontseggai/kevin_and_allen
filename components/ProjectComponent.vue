@@ -4,7 +4,7 @@
       <img :src="project.photo" alt="">
       <img class="hover" :src="project.photoHover" alt="">
     </div>
-    <div class="overlay" :class="{active: isActive}">
+    <div class="overlay" :class="{active: isActive}" @click="deactiveOverlay">
       <img class="close" src="~/static/close.svg" alt="" @click="deactiveOverlay">
       <div class="video" :data-vimeo-url="project.url" :data-vimeo-width="1000" :id="project.id"></div>
     </div>

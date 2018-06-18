@@ -7,7 +7,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' },
+      { hid: 'description', name: 'description', content: '' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#ffffff' }

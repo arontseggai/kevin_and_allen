@@ -12,6 +12,7 @@
 </template>
 
 <style scoped>
+
   [v-cloak] {
     display: none;
   }

@@ -1,12 +1,12 @@
 <template>
-  <div v-cloak class="column is-6">
+  <div v-cloak class="column is-6" @keydown.esc="deactiveOverlay">
     <div class="imagery" @click="activateOverlay">
-      <img :src="project.photo" alt="">
-      <img class="hover" :src="project.photoHover" alt="">
+      <img :src="photo" alt="">
+      <img class="hover" :src="photoHover" alt="">
     </div>
     <div class="overlay" :class="{active: isActive}" @click="deactiveOverlay">
       <img class="close" src="~/static/close.svg" alt="" @click="deactiveOverlay">
-      <div class="video" :data-vimeo-url="project.url" :data-vimeo-width="1000" :id="project.id"></div>
+      <div class="video" :data-vimeo-url="url" :data-vimeo-width="1000" :id="id"></div>
     </div>
   </div>
 </template>
@@ -67,7 +67,28 @@
 <script>
   import Player from '@vimeo/player'
   export default {
-    props: ['project'],
+    props: {
+      id: {
+        type: String,
+        required: true
+      },
+      title: {
+        type: String,
+        required: true
+      },
+      url: {
+        type: String,
+        required: true
+      },
+      photo: {
+        type: String,
+        required: true
+      },
+      photoHover: {
+        type: String,
+        required: true
+      }                  
+    },
     data() {
       return {
         isActive: false,
@@ -81,10 +102,19 @@
       deactiveOverlay() {
         this.isActive = false
         this.player.pause()
+      },
+      deactiveOverlayEscape(e) {
+        if (e.keyCode === 27 && this.isActive) {
+          this.isActive = false;
+          this.player.pause()
+        }
       }
     },
+    created() {
+      window.addEventListener('keyup', this.deactiveOverlayEscape);
+    },
     mounted() {
-      this.player = new Player(this.project.id)
+      this.player = new Player(this.id)
     }
   }
 </script>

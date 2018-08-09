@@ -54,7 +54,7 @@
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
-    padding-top: 13%;
+    align-items: center;
   }
   .overlay .video {
     display: none;

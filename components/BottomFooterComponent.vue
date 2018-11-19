@@ -6,9 +6,9 @@
                     <img src="~/assets/img/allen_en_kevin_logo.jpg">
                 </div>
             </div>
-            <span class="credits">CODE BY ARON TSEGGAI</span>
+            <a href="https://arontseggai.com" target="_blank"><span class="credits">CODE BY ARON TSEGGAI</span></a>
         </div>
-    </div>    
+    </div>
 </template>
 
 <style scoped>
@@ -16,6 +16,6 @@
 
     .credits {
         color: #fff;
-        font-size: 6px; 
+        font-size: 6px;
     }
 </style>

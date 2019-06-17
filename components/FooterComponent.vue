@@ -3,8 +3,10 @@
     <div class="column is-half-mobile text-right">
       <p>INFO</p>
       <div class="subcontent">
-        <p>Tel: 0031643248030</p>
-        <p><a href="mailto:info@grygboit.com">Mail</a></p>
+        <p>Allen: 0031643248030</p>
+        <p><a href="mailto:allen@grygboit.com">Allen@grygboit.com</a></p>
+        <p>Kevin: 0031642609878</p>        
+        <p><a href="mailto:kevin@grygboit.com">Kevin@grygboit.com</a></p>
         <p><a href="https://instagram.com/grygierczykboitelle" target="_blank">Instagram</a></p>
         <p><a href="https://vimeo.com/grygboit" target="_blank">Vimeo</a></p>
       </div>

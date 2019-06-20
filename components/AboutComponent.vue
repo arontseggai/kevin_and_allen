@@ -16,7 +16,7 @@
             <br>
             <p>Contact  <a href="mailto:info@grygboit.com">us</a> and let's make amazing work.</p>
             <br>
-            <p>(In case our faces look familiar: no, ‘Opslaan Als’ really is dead. Yes, we’re still very much freelance. But since we make such a smooth sailing team, still work together a lot and everybody thinks we’re brothers anyway, we decided to give the monster that is us-as-a-duo a name.)</p>
+            <p>Please note: we’re both freelancers, so yes, you, as a production company or ad agency, can also hire us seperately.</p>
           </div>
         </div>
       </div>

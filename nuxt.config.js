@@ -37,7 +37,7 @@ module.exports = {
   ** Add css
   */
   css: [
-    'bulma/css/bulma.css',
+    "~/assets/css/bulma.css",
     "~/assets/css/styles.css"
   ],
   router: { base: '' },
@@ -45,7 +45,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: [],
+    vendor: [],   
     /*
     ** Run ESLint on save
     */

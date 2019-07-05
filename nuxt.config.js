@@ -45,7 +45,12 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: [],   
+    vendor: [],
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    },    
     /*
     ** Run ESLint on save
     */

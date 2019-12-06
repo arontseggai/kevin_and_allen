@@ -111,4 +111,4 @@ hr {
 .u-text-center { text-align: center !important; }
 .u-margin-bottom-small { margin-bottom: 10px !important; }
 
-.u-padding-bottom-none { padding-bottom: none !important; }
+.u-padding-bottom-none { padding-bottom: 0!important; }

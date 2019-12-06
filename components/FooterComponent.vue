@@ -1,21 +1,20 @@
-<template>
-  <div class="columns is-mobile">
+<template>  
+  <div class="columns is-mobile is-multiline">
+    <div class="column is-full u-text-center u-padding-bottom-none"><p>INFO</p></div>
     <div class="column is-half-mobile text-right">
-      <p>INFO</p>
+      <!-- <p>ALLEN</p> -->
       <div class="subcontent">
         <p>Allen: 0031643248030</p>
-        <p><a href="mailto:allen@grygboit.com">Allen@grygboit.com</a></p>
-        <p>Kevin: 0031642609878</p>                
-        <p><a href="mailto:kevin@grygboit.com">Kevin@grygboit.com</a></p>
-        <br>
-        <p><a href="https://instagram.com/grygierczykboitelle" target="_blank">Instagram</a></p>
-        <p><a href="https://vimeo.com/grygboit" target="_blank">Vimeo</a></p>
+        <p class="u-margin-bottom-small" ><a href="mailto:allen@grygboit.com">allen@grygboit.com</a></p>
+        <p><a href="https://instagram.com/grygierczykboitelle" target="_blank">Instagram</a></p>        
       </div>
     </div>
     <div class="column is-half-mobile">
-      <p>CLIENTS</p>
+      <!-- <p>KEVIN</p> -->
       <div class="subcontent">
-        <p v-for="(client, index) in clients" :key="index">{{ client }}</p>
+        <p>Kevin: 0031642609878</p>                
+        <p class="u-margin-bottom-small"><a href="mailto:kevin@grygboit.com">kevin@grygboit.com</a></p>
+        <p><a href="https://vimeo.com/grygboit" target="_blank">Vimeo</a></p>
       </div>
     </div>
   </div>

@@ -35,8 +35,6 @@
   }
 }
 
-
-
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -50,7 +48,6 @@ p {
 a {
   color: red;
 }
-
 
 hr {
   margin-top: 40px;
@@ -72,9 +69,6 @@ hr {
   text-align: right;
 }
 
-
-
-
 #header nav {
   display: flex;
   justify-content: center;
@@ -85,7 +79,6 @@ hr {
   width: 100%;
 }
 
-
 #logo{
   transition: all 1s;
 }
@@ -94,8 +87,6 @@ hr {
 
 #about .imagery-container .photo-card .imagery { border-radius: 5px; overflow: hidden; }
 #about .imagery-container .photo-card { text-align: center; }
-
-
 
 #about .content-block p {
   font-size: 10px;
@@ -116,3 +107,8 @@ hr {
   z-index: 999;
   width: 100%;
 }
+
+.u-text-center { text-align: center !important; }
+.u-margin-bottom-small { margin-bottom: 10px !important; }
+
+.u-padding-bottom-none { padding-bottom: none !important; }
